@@ -1,0 +1,57 @@
+:root {
+  --cell-size: 64px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: black;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.board-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.board {
+  border: 2px solid whitesmoke;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.row {
+  display: flex;
+}
+
+
+.cell {
+  display: block;
+  border: 1px solid yellow;
+
+  box-sizing: border-box;
+  background-color: burlywood;
+
+  width: var(--cell-size);
+  height: var(--cell-size);
+}
+
+.gnome{
+  background-image: url('img/goblin.png');
+  background-size: contain;
+  cursor: pointer;
+}
+
+
